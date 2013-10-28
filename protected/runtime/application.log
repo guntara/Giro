@@ -1,0 +1,1280 @@
+2013/09/11 10:47:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giro/admin".' in /var/www/giro/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#1 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/giro/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:48:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:48:58 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/admin.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:49:07 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/admin.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/create
+---
+2013/09/11 10:50:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/admin.php(23): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:51:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/admin.php(28): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:53:00 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbListView.php(39): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbListView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/employee/index.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/giro/protected/controllers/EmployeeController.php(135): CController->render('index', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): EmployeeController->actionIndex()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/employee/
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 10:53:49 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/admin.php(29): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro/admin
+HTTP_REFERER=http://localhost/giro/index.php/giro/create
+---
+2013/09/11 11:02:33 [error] [exception.CException] exception 'CException' with message 'EmployeeController and its behaviors do not have a method or closure named "getNames".' in /var/www/giro/framework/base/CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('getNames', Array)
+#1 [internal function]: EmployeeController->getNames(Object(Employee), 0, Object(CDataColumn))
+#2 /var/www/giro/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CComponent->evaluateExpression(Array, Array)
+#4 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent(0, Object(Employee))
+#5 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CGridColumn->renderDataCell(0)
+#6 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow(0)
+#7 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#12 /var/www/giro/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/giro/protected/views/employee/admin.php(74): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#15 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#16 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#17 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /var/www/giro/protected/controllers/EmployeeController.php(150): CController->render('admin', Array)
+#19 /var/www/giro/framework/web/actions/CInlineAction.php(49): EmployeeController->actionAdmin()
+#20 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/admin')
+#30 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#31 /var/www/giro/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/giro/index.php/employee/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/create
+---
+2013/09/11 11:02:58 [error] [exception.CException] exception 'CException' with message 'EmployeeController and its behaviors do not have a method or closure named "getNames".' in /var/www/giro/framework/base/CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('getNames', Array)
+#1 [internal function]: EmployeeController->getNames(Object(Employee), 0, Object(CDataColumn))
+#2 /var/www/giro/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CComponent->evaluateExpression(Array, Array)
+#4 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent(0, Object(Employee))
+#5 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CGridColumn->renderDataCell(0)
+#6 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow(0)
+#7 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#12 /var/www/giro/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/giro/protected/views/employee/admin.php(74): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#15 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#16 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#17 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /var/www/giro/protected/controllers/EmployeeController.php(150): CController->render('admin', Array)
+#19 /var/www/giro/framework/web/actions/CInlineAction.php(49): EmployeeController->actionAdmin()
+#20 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/admin')
+#30 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#31 /var/www/giro/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/giro/index.php/employee/admin
+HTTP_REFERER=http://localhost/giro/index.php/employee/create
+---
+2013/09/11 11:13:26 [error] [exception.CException] exception 'CException' with message 'Property "PluploadWidget.config" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('config', Array)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'application.ext...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(41): CBaseController->widget('application.ext...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:14:46 [error] [exception.CException] exception 'CException' with message 'Property "PluploadWidget.config" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('config', Array)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'ext.Plupload.Pl...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.Plupload.Pl...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(41): CBaseController->widget('ext.Plupload.Pl...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:16:06 [error] [exception.CException] exception 'CException' with message 'Property "PluploadWidget.config" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('config', Array)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'ext.Plupload.Pl...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.Plupload.Pl...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(41): CBaseController->widget('ext.Plupload.Pl...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:36:03 [error] [exception.CException] exception 'CException' with message 'Property "CMultiFileUpload.allowEmpty" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('allowEmpty', false)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'CMultiFileUploa...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('CMultiFileUploa...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(46): CBaseController->widget('CMultiFileUploa...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:36:19 [error] [exception.CException] exception 'CException' with message 'Property "CMultiFileUpload.allowEmpty" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('allowEmpty', 'false')
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'CMultiFileUploa...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('CMultiFileUploa...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(46): CBaseController->widget('CMultiFileUploa...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:36:29 [error] [exception.CException] exception 'CException' with message 'Property "CMultiFileUpload.maxFiles" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('maxFiles', 3)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'CMultiFileUploa...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('CMultiFileUploa...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(45): CBaseController->widget('CMultiFileUploa...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:37:35 [error] [exception.CException] exception 'CException' with message 'Property "CMultiFileUpload.maxSize" is not defined.' in /var/www/giro/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/giro/framework/web/CWidgetFactory.php(161): CComponent->__set('maxSize', 2097152)
+#1 /var/www/giro/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(GiroController), 'CMultiFileUploa...', Array)
+#2 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('CMultiFileUploa...', Array)
+#3 /var/www/giro/protected/views/giro/_form.php(43): CBaseController->widget('CMultiFileUploa...', Array)
+#4 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#5 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#8 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#9 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#11 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/giro/protected/controllers/GiroController.php(80): CController->render('create', Array)
+#13 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#14 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#24 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /var/www/giro/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 11:55:07 [error] [php] mkdir(): Permission denied (/var/www/giro/protected/controllers/GiroController.php:68)
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#2 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#5 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/create
+in /var/www/giro/protected/controllers/GiroController.php (68)
+in /var/www/giro/index.php (13)
+2013/09/11 11:56:06 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 11:56:47 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 11:56:56 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 11:58:07 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:05:30 [error] [exception.CException] exception 'CException' with message 'CMultiFileUpload must specify "model" and "attribute" or "name" property values.' in /var/www/giro/framework/web/widgets/CInputWidget.php:60
+Stack trace:
+#0 /var/www/giro/framework/web/widgets/CMultiFileUpload.php(87): CInputWidget->resolveNameID()
+#1 /var/www/giro/framework/web/CBaseController.php(173): CMultiFileUpload->run()
+#2 /var/www/giro/protected/views/giro/_form.php(44): CBaseController->widget('CMultiFileUploa...', Array)
+#3 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#4 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#5 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#6 /var/www/giro/protected/views/giro/create.php(10): CController->renderPartial('_form', Array)
+#7 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#8 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#9 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#10 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /var/www/giro/protected/controllers/GiroController.php(90): CController->render('create', Array)
+#12 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionCreate()
+#13 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/create')
+#23 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /var/www/giro/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/giro/index.php/giro/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 12:06:55 [error] [php] Undefined index: filename (/var/www/giro/protected/controllers/GiroController.php:77)
+Stack trace:
+#0 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#1 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#7 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/create
+in /var/www/giro/protected/controllers/GiroController.php (77)
+in /var/www/giro/index.php (13)
+2013/09/11 12:27:42 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:27:53 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:45:47 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:46:36 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:46:47 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:48:50 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (108)
+in /var/www/giro/index.php (13)
+2013/09/11 12:49:35 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (108)
+in /var/www/giro/index.php (13)
+2013/09/11 12:51:58 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:55:16 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:55:51 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:57:06 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:57:39 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:58:16 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:58:52 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 12:59:14 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 14:18:42 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/var/www/giro/themes/abound/views/site/index.php". A CPortlet widget does not have an endWidget() call.' in /var/www/giro/framework/web/CBaseController.php:101
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/t...', NULL, true)
+#1 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#2 /var/www/giro/protected/controllers/SiteController.php(32): CController->render('index')
+#3 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/giro/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php
+HTTP_REFERER=http://localhost/giro/index.php/giro/4
+---
+2013/09/11 14:31:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'erp_id'. The SQL statement executed was: INSERT INTO tbl_customers(erp_id, company_name, address) VALUES ('191 Benua Melayu 2', '191 Benua Melayu 2', 'Jl. Sultan mahmud No. 191 Kel. Benua Melayu Kec. Pontianak Selatan'), ('Abun Batako Sungai Raya 2', 'Abun Batako Sungai Raya 2', 'Jl. Sungai Raya Dalam Kel. SungaiRaya Kec. Sungai Raya'), ('Achuan Peniti Sui Pinyuh 2', 'Achuan Peniti Sui Pinyuh 2', 'Jl. Peniti Kel. Sui Pinyuh Kec. -'), ('Afa Singkawang 2', 'Afa Singkawang 2', 'Jl. Tanjung Gundul Kel. Singkawang Kec. -'), ('Agus Saigon 2', 'Agus Saigon 2', 'Jl. Tanjung Raya Kel. Saigon Kec. Pontianak Timur'), ('Ajin Singkawang 2', 'Ajin Singkawang 2', 'Jl. Sejahtera Kel. SIngkawang Kec. -'), ('Akiong Benua Melayu Darat 2', 'Akiong Benua Melayu Darat 2', 'Jl. Gajah Mada'), ('Aku Sucipto Parit Tokaya 2', 'Aku Sucipto Parit Tokaya 2', 'Jl. Perdana Komp. Ruko Perdana Square No. 18 D Kel. Parit Tokaya Kec. Pontianak Selatan'), ('Alfianto Benua Melayu Darat 2', 'Alfianto Benua Melayu Darat 2', 'Jl. Tanjung Sari No. 8 Kel. Benua Melayu Darat Kec. Pontianak Selatan'), ('Amerta Sanggau 2', 'Amerta Sanggau 2', 'Jl. A. Yani No. 210 b-c Kel. Sanggau Kec. -').
+in /var/www/giro/protected/modules/importcsv/models/ImportCsv.php (111)
+in /var/www/giro/protected/modules/importcsv/controllers/DefaultController.php (201)
+in /var/www/giro/index.php (13)
+2013/09/11 14:32:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'erp_id'. The SQL statement executed was: INSERT INTO tbl_customers(erp_id, company_name, address) VALUES ('191 Benua Melayu 2', '191 Benua Melayu 2', 'Jl. Sultan mahmud No. 191 Kel. Benua Melayu Kec. Pontianak Selatan'), ('Abun Batako Sungai Raya 2', 'Abun Batako Sungai Raya 2', 'Jl. Sungai Raya Dalam Kel. SungaiRaya Kec. Sungai Raya'), ('Achuan Peniti Sui Pinyuh 2', 'Achuan Peniti Sui Pinyuh 2', 'Jl. Peniti Kel. Sui Pinyuh Kec. -'), ('Afa Singkawang 2', 'Afa Singkawang 2', 'Jl. Tanjung Gundul Kel. Singkawang Kec. -'), ('Agus Saigon 2', 'Agus Saigon 2', 'Jl. Tanjung Raya Kel. Saigon Kec. Pontianak Timur'), ('Ajin Singkawang 2', 'Ajin Singkawang 2', 'Jl. Sejahtera Kel. SIngkawang Kec. -'), ('Akiong Benua Melayu Darat 2', 'Akiong Benua Melayu Darat 2', 'Jl. Gajah Mada'), ('Aku Sucipto Parit Tokaya 2', 'Aku Sucipto Parit Tokaya 2', 'Jl. Perdana Komp. Ruko Perdana Square No. 18 D Kel. Parit Tokaya Kec. Pontianak Selatan'), ('Alfianto Benua Melayu Darat 2', 'Alfianto Benua Melayu Darat 2', 'Jl. Tanjung Sari No. 8 Kel. Benua Melayu Darat Kec. Pontianak Selatan'), ('Amerta Sanggau 2', 'Amerta Sanggau 2', 'Jl. A. Yani No. 210 b-c Kel. Sanggau Kec. -').
+in /var/www/giro/protected/modules/importcsv/models/ImportCsv.php (111)
+in /var/www/giro/protected/modules/importcsv/controllers/DefaultController.php (201)
+in /var/www/giro/index.php (13)
+2013/09/11 14:46:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/updat...')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/customers/update/21
+HTTP_REFERER=http://localhost/giro/index.php/customers/21
+---
+2013/09/11 14:46:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/creat...')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/customers/create
+HTTP_REFERER=http://localhost/giro/index.php/site/index
+---
+2013/09/11 14:47:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/create')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/create
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/11 14:51:29 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 14:58:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/giro/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/view')
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/giro/index.php/customers/view
+HTTP_REFERER=http://localhost/giro/index.php/customers/21
+---
+2013/09/11 15:11:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/creat...')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/customers/create
+HTTP_REFERER=http://localhost/giro/index.php/giro/admin
+---
+2013/09/11 15:11:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/admin')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/customers/admin
+HTTP_REFERER=http://localhost/giro/index.php/customers/create
+---
+2013/09/11 15:17:47 [warning] [application] Failed to set unsafe attribute "employee" of "User".
+in /var/www/giro/protected/controllers/UserController.php (92)
+in /var/www/giro/index.php (13)
+2013/09/11 15:19:20 [error] [php] Trying to get property of non-object (/var/www/giro/protected/controllers/GiroController.php:202)
+Stack trace:
+#0 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CDataColumn->evaluateExpression()
+#1 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent()
+#2 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CDataColumn->renderDataCell()
+#3 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow()
+#4 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#5 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CGridView->renderContent()
+#9 /var/www/giro/framework/web/CBaseController.php(173): CGridView->run()
+#10 /var/www/giro/protected/views/giro/admin.php(40): GiroController->widget()
+#11 /var/www/giro/framework/web/CBaseController.php(126): require()
+#12 /var/www/giro/framework/web/CBaseController.php(95): GiroController->renderInternal()
+#13 /var/www/giro/framework/web/CController.php(869): GiroController->renderFile()
+#14 /var/www/giro/framework/web/CController.php(782): GiroController->renderPartial()
+#15 /var/www/giro/protected/controllers/GiroController.php(169): GiroController->render()
+#16 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#17 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#19 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#22 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#25 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#26 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/admin
+in /var/www/giro/protected/controllers/GiroController.php (202)
+in /var/www/giro/protected/views/giro/admin.php (40)
+in /var/www/giro/protected/controllers/GiroController.php (169)
+2013/09/11 15:21:47 [error] [php] Undefined variable: result (/var/www/giro/protected/controllers/GiroController.php:212)
+Stack trace:
+#0 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CDataColumn->evaluateExpression()
+#1 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent()
+#2 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CDataColumn->renderDataCell()
+#3 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow()
+#4 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#5 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CGridView->renderContent()
+#9 /var/www/giro/framework/web/CBaseController.php(173): CGridView->run()
+#10 /var/www/giro/protected/views/giro/admin.php(40): GiroController->widget()
+#11 /var/www/giro/framework/web/CBaseController.php(126): require()
+#12 /var/www/giro/framework/web/CBaseController.php(95): GiroController->renderInternal()
+#13 /var/www/giro/framework/web/CController.php(869): GiroController->renderFile()
+#14 /var/www/giro/framework/web/CController.php(782): GiroController->renderPartial()
+#15 /var/www/giro/protected/controllers/GiroController.php(169): GiroController->render()
+#16 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#17 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#19 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#22 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#25 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#26 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/admin
+in /var/www/giro/protected/controllers/GiroController.php (212)
+in /var/www/giro/protected/views/giro/admin.php (40)
+in /var/www/giro/protected/controllers/GiroController.php (169)
+2013/09/11 15:22:49 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 15:23:15 [error] [php] Undefined variable: result (/var/www/giro/protected/controllers/GiroController.php:212)
+Stack trace:
+#0 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CDataColumn->evaluateExpression()
+#1 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent()
+#2 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CDataColumn->renderDataCell()
+#3 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow()
+#4 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#5 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CGridView->renderContent()
+#9 /var/www/giro/framework/web/CBaseController.php(173): CGridView->run()
+#10 /var/www/giro/protected/views/giro/admin.php(40): GiroController->widget()
+#11 /var/www/giro/framework/web/CBaseController.php(126): require()
+#12 /var/www/giro/framework/web/CBaseController.php(95): GiroController->renderInternal()
+#13 /var/www/giro/framework/web/CController.php(869): GiroController->renderFile()
+#14 /var/www/giro/framework/web/CController.php(782): GiroController->renderPartial()
+#15 /var/www/giro/protected/controllers/GiroController.php(169): GiroController->render()
+#16 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#17 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#19 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#22 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#25 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#26 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/admin
+in /var/www/giro/protected/controllers/GiroController.php (212)
+in /var/www/giro/protected/views/giro/admin.php (40)
+in /var/www/giro/protected/controllers/GiroController.php (169)
+2013/09/11 15:24:58 [error] [php] Undefined variable: result (/var/www/giro/protected/controllers/GiroController.php:213)
+Stack trace:
+#0 /var/www/giro/framework/zii/widgets/grid/CDataColumn.php(131): CDataColumn->evaluateExpression()
+#1 /var/www/giro/framework/zii/widgets/grid/CGridColumn.php(144): CDataColumn->renderDataCellContent()
+#2 /var/www/giro/framework/zii/widgets/grid/CGridView.php(589): CDataColumn->renderDataCell()
+#3 /var/www/giro/framework/zii/widgets/grid/CGridView.php(545): CGridView->renderTableRow()
+#4 /var/www/giro/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderTableBody()
+#5 /var/www/giro/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 /var/www/giro/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#8 /var/www/giro/framework/zii/widgets/CBaseListView.php(128): CGridView->renderContent()
+#9 /var/www/giro/framework/web/CBaseController.php(173): CGridView->run()
+#10 /var/www/giro/protected/views/giro/admin.php(40): GiroController->widget()
+#11 /var/www/giro/framework/web/CBaseController.php(126): require()
+#12 /var/www/giro/framework/web/CBaseController.php(95): GiroController->renderInternal()
+#13 /var/www/giro/framework/web/CController.php(869): GiroController->renderFile()
+#14 /var/www/giro/framework/web/CController.php(782): GiroController->renderPartial()
+#15 /var/www/giro/protected/controllers/GiroController.php(169): GiroController->render()
+#16 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#17 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#19 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#22 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#25 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#26 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#28 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/admin
+in /var/www/giro/protected/controllers/GiroController.php (213)
+in /var/www/giro/protected/views/giro/admin.php (40)
+in /var/www/giro/protected/controllers/GiroController.php (169)
+2013/09/11 15:30:29 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (75)
+in /var/www/giro/index.php (13)
+2013/09/11 15:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "1378887769_945330_593439990688601_782364462_n.jpg".' in /var/www/giro/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(270): CController->missingAction('1378887769_9453...')
+#1 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('1378887769_9453...')
+#2 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro/1378887769...')
+#3 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/giro/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/giro/index.php/giro/1378887769_945330_593439990688601_782364462_n.jpg
+HTTP_REFERER=http://localhost/giro/index.php/giro/1
+---
+2013/09/12 00:16:38 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbListView.php(39): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbListView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/giro/index.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/giro/protected/controllers/GiroController.php(154): CController->render('index', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionIndex()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('giro')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/giro
+HTTP_REFERER=http://localhost/giro/index.php/site/login
+---
+2013/09/12 00:16:44 [error] [php] Undefined variable: data (/var/www/giro/protected/views/giro/admin.php:42)
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(869): GiroController->renderFile()
+#1 /var/www/giro/framework/web/CController.php(782): GiroController->renderPartial()
+#2 /var/www/giro/protected/controllers/GiroController.php(169): GiroController->render()
+#3 /var/www/giro/framework/web/actions/CInlineAction.php(49): GiroController->actionAdmin()
+#4 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/giro/framework/web/filters/CFilterChain.php(133): GiroController->runAction()
+#6 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/giro/framework/web/filters/CInlineFilter.php(58): GiroController->filterAccessControl()
+#9 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/giro/framework/web/CController.php(265): GiroController->runActionWithFilters()
+#12 /var/www/giro/framework/web/CWebApplication.php(282): GiroController->run()
+#13 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/giro/admin
+in /var/www/giro/protected/views/giro/admin.php (42)
+in /var/www/giro/protected/controllers/GiroController.php (169)
+in /var/www/giro/index.php (13)
+2013/09/12 00:42:39 [warning] [application] Failed to set unsafe attribute "filename" of "Giro".
+in /var/www/giro/protected/controllers/GiroController.php (108)
+in /var/www/giro/index.php (13)
+2013/09/12 11:01:40 [error] [php] include(EmploymentSalary.php): failed to open stream: No such file or directory (/var/www/giro/framework/YiiBase.php:421)
+Stack trace:
+#0 /var/www/giro/protected/views/employee/view.php(14): spl_autoload_call()
+#1 /var/www/giro/framework/web/CBaseController.php(126): require()
+#2 /var/www/giro/framework/web/CBaseController.php(95): EmployeeController->renderInternal()
+#3 /var/www/giro/framework/web/CController.php(869): EmployeeController->renderFile()
+#4 /var/www/giro/framework/web/CController.php(782): EmployeeController->renderPartial()
+#5 /var/www/giro/protected/controllers/EmployeeController.php(57): EmployeeController->render()
+#6 unknown(0): EmployeeController->actionView()
+#7 /var/www/giro/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#8 /var/www/giro/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/giro/framework/web/filters/CFilterChain.php(133): EmployeeController->runAction()
+#11 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/giro/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/giro/framework/web/filters/CInlineFilter.php(58): EmployeeController->filterAccessControl()
+#14 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/giro/framework/web/CController.php(265): EmployeeController->runActionWithFilters()
+#17 /var/www/giro/framework/web/CWebApplication.php(282): EmployeeController->run()
+#18 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/employee/23
+in /var/www/giro/protected/views/employee/view.php (14)
+in /var/www/giro/protected/controllers/EmployeeController.php (57)
+in /var/www/giro/index.php (13)
+2013/09/12 11:07:42 [warning] [application] Failed to set unsafe attribute "notes" of "Location".
+in /var/www/giro/protected/controllers/LocationController.php (73)
+in /var/www/giro/index.php (13)
+2013/09/12 11:07:46 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbListView.php(39): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbListView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/location/index.php(17): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/giro/protected/controllers/LocationController.php(135): CController->render('index', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): LocationController->actionIndex()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('index')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('location/index')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/location/index
+HTTP_REFERER=http://localhost/giro/index.php/location/3
+---
+2013/09/12 11:12:09 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /var/www/giro/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/giro/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /var/www/giro/protected/extensions/bootstrap/widgets/TbGridView.php(84): CModule->__get('bootstrap')
+#2 /var/www/giro/framework/web/CBaseController.php(147): TbGridView->init()
+#3 /var/www/giro/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /var/www/giro/protected/views/jobStatus/admin.php(28): CBaseController->widget('bootstrap.widge...', Array)
+#5 /var/www/giro/framework/web/CBaseController.php(126): require('/var/www/giro/p...')
+#6 /var/www/giro/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/giro/p...', Array, true)
+#7 /var/www/giro/framework/web/CController.php(869): CBaseController->renderFile('/var/www/giro/p...', Array, true)
+#8 /var/www/giro/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#9 /var/www/giro/protected/controllers/JobStatusController.php(150): CController->render('admin', Array)
+#10 /var/www/giro/framework/web/actions/CInlineAction.php(49): JobStatusController->actionAdmin()
+#11 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/giro/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/giro/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('admin')
+#20 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('jobStatus/admin')
+#21 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /var/www/giro/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/giro/index.php/jobStatus/admin
+HTTP_REFERER=http://localhost/giro/index.php/department/admin
+---
+2013/09/12 11:20:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('customers/creat...')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/customers/create
+HTTP_REFERER=http://localhost/giro/index.php/location/admin
+---
+2013/09/12 11:22:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/create')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/create
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/12 11:23:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('delete')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/delete')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/delete/23?ajax=employee-grid
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/12 11:23:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('update')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/update')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/update/23
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/12 11:50:30 [error] [php] Trying to get property of non-object (/var/www/giro/protected/models/User.php:124)
+Stack trace:
+#0 /var/www/giro/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/protected/models/User.php (124)
+in /var/www/giro/themes/abound/views/site/index.php (5)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+2013/09/12 11:53:51 [error] [php] Trying to get property of non-object (/var/www/giro/protected/models/User.php:124)
+Stack trace:
+#0 /var/www/giro/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/protected/models/User.php (124)
+in /var/www/giro/themes/abound/views/site/index.php (5)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+2013/09/12 11:54:45 [error] [php] Invalid argument supplied for foreach() (/var/www/giro/protected/models/User.php:124)
+Stack trace:
+#0 /var/www/giro/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/protected/models/User.php (124)
+in /var/www/giro/themes/abound/views/site/index.php (5)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+2013/09/12 11:54:59 [error] [php] Undefined variable: user (/var/www/giro/protected/models/User.php:126)
+Stack trace:
+#0 /var/www/giro/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/protected/models/User.php (126)
+in /var/www/giro/themes/abound/views/site/index.php (5)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+2013/09/12 11:55:56 [error] [php] Array to string conversion (/var/www/giro/themes/abound/views/site/index.php:9)
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/themes/abound/views/site/index.php (9)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+in /var/www/giro/index.php (13)
+2013/09/12 12:00:31 [error] [php] Undefined variable: user (/var/www/giro/protected/models/User.php:126)
+Stack trace:
+#0 /var/www/giro/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#4 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#7 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/protected/models/User.php (126)
+in /var/www/giro/themes/abound/views/site/index.php (5)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+2013/09/12 12:01:20 [error] [php] Invalid argument supplied for foreach() (/var/www/giro/themes/abound/views/site/index.php:9)
+Stack trace:
+#0 /var/www/giro/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/giro/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/giro/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/giro/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/giro/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/giro/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/giro/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/giro/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CWebApplication->run()
+REQUEST_URI=/giro/index.php/site/index
+in /var/www/giro/themes/abound/views/site/index.php (9)
+in /var/www/giro/protected/controllers/SiteController.php (32)
+in /var/www/giro/index.php (13)
+2013/09/12 12:06:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/create')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/create
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
+2013/09/12 12:06:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/giro/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/giro/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/giro/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/giro/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/giro/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/giro/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/giro/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/giro/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/giro/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/giro/framework/web/CWebApplication.php(141): CWebApplication->runController('employee/create')
+#9 /var/www/giro/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/giro/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/giro/index.php/employee/create
+HTTP_REFERER=http://localhost/giro/index.php/employee/admin
+---
